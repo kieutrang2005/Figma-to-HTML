@@ -20,13 +20,21 @@ a {
   text-decoration: none;
 }
 
-.main_content {
+.main-content {
   width: 1170px;
   max-width: calc(100% - 48px);
   margin-left: auto;
   margin-right: auto;
 }
 
+.heading-lv2 {
+  font-family: Sen;
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.27;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
 .btn {
   display: inline-block;
   min-width: 118px;
@@ -271,4 +279,44 @@ a {
 
 .hero .stats strong:nth-child(2) {
   margin-left: 28px;
+}
+
+/* ------------------popular----------------- */
+.popular {
+  padding: 70px 0;
+  margin-top: 135px;
+}
+
+.popular-top .desc {
+  margin-top: 16px;
+  width: 458px;
+  font-size: 1.8rem;
+  line-height: 1.67;
+}
+
+.popular-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular-top .control {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+.popular-top .control-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--mau_nut);
+  border: 1px solid var(--mau_nut);
+}
+
+.popular-top .control-btn:hover {
+  background: var(--mau_nut);
+  color: #fff;
 }
