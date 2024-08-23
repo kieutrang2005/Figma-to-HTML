@@ -50,6 +50,7 @@ a {
 
 .btn:hover {
   opacity: 0.9;
+  cursor: pointer;
 }
 
 /* --------------------Hearder---------------------- */
@@ -287,6 +288,7 @@ a {
   margin-top: 135px;
 }
 
+/* popular trên */
 .popular-top .desc {
   margin-top: 16px;
   width: 458px;
@@ -319,4 +321,86 @@ a {
 .popular-top .control-btn:hover {
   background: var(--mau_nut);
   color: #fff;
+}
+
+/* popular dưới */
+.popular .course-list {
+  margin-top: 55px;
+  display: flex;
+  gap: 30px;
+}
+
+.popular .course-item .thumb {
+  width: 100%;
+  height: 278px;
+  object-fit: cover;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.popular .course-item {
+  border-radius: 12px;
+  border: 1px solid #e2dfda;
+  background: #fff;
+}
+
+.popular .course-item .info {
+  padding: 16px 22px 22px 22px;
+}
+
+.popular .course-item .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popular .course-item .head .tittle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+  color: #171100;
+}
+
+.popular .tittle .value {
+  margin-left: 6px;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  background: #fea31b;
+}
+
+.popular .course-item .desc {
+  margin-top: 6px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
+  color: #5f5b53;
+}
+
+.popular .course-item .food {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.popular .course-item .food .price {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+  color: #171100;
+}
+
+.popular .course-item .food .nutpopular {
+  border: none;
+}
+
+.popular .course-item .food .nutpopular:hover {
+  background: var(--mau_nut);
+}
+
+.popular .course-item:hover {
+  border: 1px solid transparent;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+  border: none;
 }
