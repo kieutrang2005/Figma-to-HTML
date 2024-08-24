@@ -422,3 +422,72 @@ trên trang sẽ ko bj méo giao diện mà sẽ hiện 3 chấm */
   box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
   border: none;
 }
+
+/* ------Feedback--------- */
+.Feedback {
+  margin-top: 135px;
+  background: #2e2100;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.Feedback .Feedback-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Feedback .info .avarta {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover; /* để ảnh ko bị méo */
+}
+
+.Feedback .peter {
+  margin-top: 18px;
+  font-family: Sen;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 34px;
+  color: #f7f7f7;
+}
+
+.Feedback .Student {
+  margin-top: 4px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 26px;
+  color: #bfbcb2;
+  width: 159px;
+}
+
+.Feedback .dots {
+  display: flex;
+  gap: 6px;
+  margin-top: 28px;
+}
+
+.Feedback .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #634700;
+  cursor: pointer;
+}
+
+.Feedback .dot.active {
+  background-color: var(--mau_nut);
+  cursor: default;
+}
+
+.Feedback .Feedback-item .content {
+  width: 66%;
+}
+
+.Feedback-item blockquote {
+  font-size: 2.6rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 40px;
+  color: #ffffff;
+}
