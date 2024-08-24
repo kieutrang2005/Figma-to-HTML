@@ -53,6 +53,23 @@ a {
   cursor: pointer;
 }
 
+/* Tối Ưu hóa tiêu đề và miêu tả trên trang: khi ng dùng nhập(thêm) nội dung
+trên trang sẽ ko bj méo giao diện mà sẽ hiện 3 chấm */
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+
+/* tránh vỡ giao diện khi ng dùng nhập vào link quá dài(muốn ở đâu thì thêm vào đó) */
+.break-all {
+  word-break: break-all;
+}
+
 /* --------------------Hearder---------------------- */
 
 .header {
@@ -338,6 +355,7 @@ a {
 }
 
 .popular .course-item {
+  flex: 1;
   border-radius: 12px;
   border: 1px solid #e2dfda;
   background: #fff;
