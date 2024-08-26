@@ -423,7 +423,7 @@ trên trang sẽ ko bj méo giao diện mà sẽ hiện 3 chấm */
   border: none;
 }
 
-/* ------Feedback--------- */
+/* ---------Feedback--------- */
 .Feedback {
   margin-top: 135px;
   background: #2e2100;
@@ -431,9 +431,16 @@ trên trang sẽ ko bj méo giao diện mà sẽ hiện 3 chấm */
   padding-bottom: 96px;
 }
 
+.Feedback-list {
+  display: flex;
+  overflow: hidden;
+}
+
 .Feedback .Feedback-item {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-shrink: 0;
 }
 
 .Feedback .info .avarta {
@@ -490,4 +497,164 @@ trên trang sẽ ko bj méo giao diện mà sẽ hiện 3 chấm */
   font-weight: 400;
   line-height: 40px;
   color: #ffffff;
+}
+
+/* ----------------Features 1----------------- */
+.Features {
+  margin-top: 135px;
+  padding: 65px 0;
+}
+
+.Features .body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Features .imgs {
+  display: flex;
+  gap: 30px;
+}
+
+.Features .imgs img {
+  width: 270px;
+  height: 405px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.Features .lower {
+  margin-top: 34px;
+}
+
+.Features .content {
+  width: 41%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Features .desc {
+  margin-top: 16px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 28px;
+  color: #5f5b53;
+}
+
+.Features .cta-btn {
+  margin-top: 32px;
+  width: 137px;
+  height: 50px;
+  background: var(--mau_nut);
+}
+
+/* --------Features 2 --------------*/
+.Features .content2 {
+  width: 49%;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Features .imgs2 img {
+  width: 470px;
+  height: 440px;
+  border-radius: 20px;
+}
+
+/* ------------------Blogs----------------- */
+.blogs {
+  margin-top: 135px;
+  padding: 96px 0;
+  background: #fffcf4;
+}
+
+.blogs .blogs-top {
+  text-align: center;
+}
+.blogs .blogs-top h2 {
+  text-align: center;
+}
+
+.blogs .blogs-top p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 28px;
+  width: 448px;
+  height: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+}
+
+.blogs .blogs-list {
+  display: flex;
+  margin-top: 55px;
+  gap: 30px;
+}
+
+.blogs .item {
+  width: 33.33%;
+  background: #ffffff;
+}
+
+.blogs .item .thumb {
+  width: 370px;
+  height: 250px;
+  border-radius: 16px 16px 0px 0px;
+  object-fit: cover;
+}
+
+.blogs .info {
+  padding: 20px 20px 28px;
+}
+
+.blogs .info .date {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 26px;
+  color: #5f5b53;
+  padding-bottom: 12px;
+}
+
+.blogs .item .date::before {
+  content: "";
+  margin-right: 4px;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ffb900;
+}
+
+.blogs .item .date::after {
+  content: "";
+  display: inline-block;
+  width: 160px;
+  height: 1px;
+  border-radius: 0.5px 0px 0px 0px;
+  background: #e2dfda;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.blogs .info .tittle {
+  margin-top: 12px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 28px;
+  color: #171100;
+}
+
+.blogs .info .read-btn {
+  margin-top: 12px;
+}
+
+.blogs .info .read-btn:hover {
+  background: var(--mau_nut);
 }
