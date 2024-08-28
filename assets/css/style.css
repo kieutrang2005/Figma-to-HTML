@@ -592,6 +592,7 @@ trên trang sẽ ko bj méo giao diện mà sẽ hiện 3 chấm */
   display: flex;
   margin-top: 55px;
   gap: 30px;
+  overflow: hidden;
 }
 
 .blogs .item {
@@ -653,8 +654,113 @@ trên trang sẽ ko bj méo giao diện mà sẽ hiện 3 chấm */
 
 .blogs .info .read-btn {
   margin-top: 12px;
+  font-size: 1.4rem;
 }
 
 .blogs .info .read-btn:hover {
   background: var(--mau_nut);
+}
+
+.blogs .dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
+  gap: 6px;
+}
+
+.blogs .dot {
+  width: 6px;
+  height: 6px;
+  background: #5f5b53;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.blogs .dot.active {
+  background: var(--mau_nut);
+  cursor: none;
+}
+
+/* =====================Footer======================= */
+.footer {
+  background: #2e2100;
+}
+
+.footer .row {
+  display: flex;
+  padding-top: 96px;
+}
+
+.footer .row .colum {
+  width: 21.6%;
+}
+.footer .row .colum:first-child {
+  width: 35%;
+}
+
+.footer .haha {
+  margin-top: 18px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 26px;
+  max-width: 267px;
+  height: 78px;
+  color: #bfbcb2;
+}
+
+.footer .social {
+  display: flex;
+  gap: 18px;
+}
+.footer .social img {
+  margin-top: 18px;
+}
+
+.footer .colum .tittle {
+  display: inline-block;
+  padding-right: 48px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 28px;
+  color: #ffffff;
+  border-bottom: 1px solid #59554b;
+  padding-bottom: 14px;
+}
+
+.footer .list {
+  margin-top: 28px;
+}
+
+.footer .list a {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 26px;
+  color: #bfbcb2;
+}
+
+.footer .list strong {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #fff;
+}
+
+.footer .list li:last-child a {
+  margin-bottom: 0;
+}
+
+.gach {
+  margin-top: 38px;
+  border: 1px solid #59554b;
+}
+
+.footer .end {
+  padding: 28px 0;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  color: #807d74;
 }
